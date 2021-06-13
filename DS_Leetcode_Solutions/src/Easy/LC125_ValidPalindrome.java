@@ -1,5 +1,7 @@
 package Easy;
 
+/*Given a string s, determine if it is a palindrome, considering only alphanumeric characters and ignoring cases. */
+
 public class LC125_ValidPalindrome {
 	
 	//Takes more than one loop

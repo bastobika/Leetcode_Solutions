@@ -1,5 +1,7 @@
 package Easy;
 
+/* The Fibonacci numbers, commonly denoted F(n) form a sequence, called the Fibonacci sequence. */
+
 public class LC509_FibonacciNumber {
 
 	public static int fib(int number) {

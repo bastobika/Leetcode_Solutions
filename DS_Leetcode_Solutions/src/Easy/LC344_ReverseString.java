@@ -1,5 +1,7 @@
 package Easy;
 
+/*Write a function that reverses a string. The input string is given as an array of characters s.*/
+
 public class LC344_ReverseString {
 
 	public static void reverseString(char[] s) {

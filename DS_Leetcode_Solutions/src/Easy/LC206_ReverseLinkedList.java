@@ -1,5 +1,7 @@
 package Easy;
 
+/*Given the head of a singly linked list, reverse the list, and return the reversed list.*/
+
 public class LC206_ReverseLinkedList {
 
 	public class ListNode {
