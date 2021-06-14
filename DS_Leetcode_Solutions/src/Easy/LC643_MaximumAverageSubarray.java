@@ -5,7 +5,7 @@ package Easy;
  * Any answer with a calculation error less than 10-5 will be accepted.
  */
 
-public class LC643_MaximumAverageSubarrayI {
+public class LC643_MaximumAverageSubarray {
 
 	public static double findMaxAverage(int[] nums, int k) {
         double sum = 0.0;
