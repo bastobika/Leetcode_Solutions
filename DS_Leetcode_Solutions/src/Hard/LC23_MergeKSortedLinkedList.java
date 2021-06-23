@@ -1,4 +1,4 @@
-package src.Hard;
+package Hard;
 
 import java.util.Comparator;
 import java.util.PriorityQueue;
