@@ -2,7 +2,7 @@ package Easy;
 
 /* Given the head of a sorted linked list, delete all duplicates such that each element appears only once. Return the linked list sorted as well. */
 
-public class LC_RemoveDuplicatesFromSortedList {
+public class LC83_RemoveDuplicatesFromSortedList {
 
 	public class ListNode {
 	      int val;
