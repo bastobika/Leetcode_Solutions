@@ -3,10 +3,8 @@ package Easy;
 import java.util.ArrayList;
 import java.util.List;
 
-/* Given the root of a binary tree, return the inorder traversal of its nodes' values. */
-
-public class LC94_BinaryTreeInorderTraversal {
-
+public class LC145_BinaryTreePostorderTraveral {
+	
 	public class TreeNode {
         int val;
         TreeNode left;
@@ -20,19 +18,17 @@ public class LC94_BinaryTreeInorderTraversal {
         }
     }
 	
-
-    public List<Integer> inorderTraversal(TreeNode root) {
+	public List<Integer> postorderTraversal(TreeNode root) {
         ArrayList<Integer> result = new ArrayList<Integer>();
         if(root == null)
             return result;
-        result.addAll(inorderTraversal(root.left));
+        result.addAll(postorderTraversal(root.left));
+        result.addAll(postorderTraversal(root.right));
         result.add(root.val);
-        result.addAll(inorderTraversal(root.right));
         return result;
     }
 	
 	public static void main(String[] args) {
-		System.out.println("Inorder traversal of Binary Tree");
+		System.out.println("Postorder traversal of Binary Tree");
 	}
-
 }

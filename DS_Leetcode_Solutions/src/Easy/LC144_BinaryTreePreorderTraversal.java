@@ -3,9 +3,9 @@ package Easy;
 import java.util.ArrayList;
 import java.util.List;
 
-/* Given the root of a binary tree, return the inorder traversal of its nodes' values. */
+/* Given the root of a binary tree, return the preorder traversal of its nodes' values. */
 
-public class LC94_BinaryTreeInorderTraversal {
+public class LC144_BinaryTreePreorderTraversal {
 
 	public class TreeNode {
         int val;
@@ -20,19 +20,18 @@ public class LC94_BinaryTreeInorderTraversal {
         }
     }
 	
-
-    public List<Integer> inorderTraversal(TreeNode root) {
+	public List<Integer> preorderTraversal(TreeNode root) {
         ArrayList<Integer> result = new ArrayList<Integer>();
         if(root == null)
             return result;
-        result.addAll(inorderTraversal(root.left));
         result.add(root.val);
-        result.addAll(inorderTraversal(root.right));
+        result.addAll(preorderTraversal(root.left));
+        result.addAll(preorderTraversal(root.right));
         return result;
     }
 	
 	public static void main(String[] args) {
-		System.out.println("Inorder traversal of Binary Tree");
+		System.out.println("Preorder traversal of Binary Tree");
 	}
 
 }
